@@ -42,7 +42,14 @@ class CustomCard extends Component {
                   <Box display="inline" fontWeight="fontWeightBold">
                     Amount:
                   </Box>{" "}
-                  RS {this.props.amount} /-
+                  <Box
+                    display="inline"
+                    fontStyle="italic"
+                    fontWeight="fontWeightBold"
+                    style={{ textDecoration: "underline" }}
+                  >
+                    RS {this.props.amount} /-
+                  </Box>{" "}
                 </Typography>
               </Grid>
 
