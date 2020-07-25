@@ -12,13 +12,14 @@ export default class App extends React.Component {
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then(res => res.json())
-      .then(data => this.setState({ post: data }))
+      .then(data => this.setState({ post: data.reverse() }))
       .catch(error => console.log(error));
   }
   render() {
     const cards = this.state.post.map(p => {
       return (
         <CustomCard
+        
           visit_id={p.userId}
           start_date={p.id}
           end_date={p.id}

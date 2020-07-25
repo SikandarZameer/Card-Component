@@ -96,7 +96,7 @@ class CustomCard extends Component {
                 <Typography
                   component="div"
                   variant="subtitle1"
-                  style={{ marginRight: "8px" }}
+                  style={{ marginLeft: "8px", marginRight: "8px" }}
                 >
                   <Box display="inline" fontWeight="fontWeightBold">
                     Symptoms:
